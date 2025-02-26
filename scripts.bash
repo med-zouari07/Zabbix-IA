@@ -70,7 +70,7 @@ try {
     if (response && response.candidates && response.candidates.length > 0) {
         result = response.candidates[0].content.parts[0].text.trim();
     } else {
-        throw 'No response from Gemini.';
+        throw 'No response from Gemini.'; #MZ
     }
     
     return result;
